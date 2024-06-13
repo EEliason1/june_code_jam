@@ -1,0 +1,29 @@
+.submitBoard {
+  max-width: 400px;
+  height: 500px;
+  background-color: #ffe7c7;
+  color: #ff9300;
+  border-radius: 20px;
+  padding: 60px 60px;
+  position: absolute;
+  top: 220px;
+  right: 64px;
+  z-index: 1;
+  box-shadow: 10px 10px 5px gray;
+}
+
+.submitBoard__title {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.submitBoard__subtitle {
+  margin: 10px 0 0;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
