@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="The United States offers many landmarks fro eager adventurers to explore. See what explorer Jacques Cousteau has been up to."
+      content="Offeriing the fastest road trip suggestion"
     />
-    <meta
-      name="keywords"
-      content="Bald Mountains, Lago di Braies, Lake Louise, Latmar, Vanoise National Park, Yosemite Valley, Unites States, Travel, Explore"
-    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <meta name="keywords" content="Road Trip, Unites States, Travel, Explore" />
     <meta name="author" content="Dan Pocock, Evan Eliason, Rosa Yi, Vekim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Road Trip</title>
@@ -17,8 +15,66 @@
   </head>
   <body class="page">
     <div class="page__content">
-      <header class="header">test header</header>
-      <main class="main">test main</main>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="LOGO"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#maps">Maps</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#cities">Cities</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#about-us">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="./images/header-photo.png"
+          alt="a person holding a map in a car"
+          class="header__image"
+        />
+        <div class="submitBoard">
+          <h1 class="submitBoard__title">Find a Road Trip with TDQ</h1>
+          <h2 class="submitBoard__subtitle">
+            Having a long road trip with short and effect time
+          </h2>
+          <form class="submitBoard__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="starting_at"
+                >STARTING AT*
+                <input
+                  type="text"
+                  id="startng"
+                  class="form__input"
+                  placeholder=" City Name"
+                />
+              </label>
+
+              <label class="form__label" for="going_to"
+                >GOING TO*
+                <input
+                  type="text"
+                  id="going"
+                  class="form__input"
+                  placeholder=" City Name"
+                />
+              </label>
+              <button type="submit" class="form__button">Search</button>
+            </fieldset>
+          </form>
+        </div>
+      </header>
+      <main class="content">
+        <section class="maps" id="maps">Map</section>
+        <section class="cities" id="cities">Cities</section>
+        <section class="about" id="about-us">About Us</section>
+      </main>
       <footer class="footer">test footer</footer>
     </div>
   </body>

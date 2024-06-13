@@ -1,0 +1,17 @@
+.header {
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header__image {
+  margin: 40px auto;
+  top: 124px;
+  width: 1230px;
+  height: 710px;
+  z-index: -1;
+}
