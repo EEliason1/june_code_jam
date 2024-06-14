@@ -1,0 +1,74 @@
+.maps {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map {
+  margin: 0;
+  padding: 0 0 50px;
+  display: flex;
+  gap: 40px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.map__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.map__title {
+  margin: 0;
+  padding: 0 0 15px;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.map__route {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.map__info {
+  margin: 40px auto 0;
+  padding: 20px 20px;
+  max-width: 250px;
+  width: 100%;
+  background-color: #ffe7c7;
+  border-radius: 20px;
+  box-shadow: 8px 8px 5px gray;
+}
+
+.map__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.map__comparison {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.map__list-item_title {
+  margin: 0;
+  padding: 0;
+}
+
+.map__list-item_value {
+  margin: 0;
+  padding: 15px 0 25px;
+  font-size: 25px;
+}
+
+.map__list-item_value_last {
+  padding-bottom: 0;
+}

@@ -47,4 +47,5 @@
 
 .form__button:hover {
   opacity: 70%;
+  cursor: pointer;
 }

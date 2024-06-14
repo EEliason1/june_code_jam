@@ -10,18 +10,14 @@
     <meta name="keywords" content="Road Trip, Unites States, Travel, Explore" />
     <meta name="author" content="Dan Pocock, Evan Eliason, Rosa Yi, Vekim" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Road Trip</title>
-    <!--Change to whatever when the idea is ironed out-->
+    <link rel="icon" href="/src/images/favicon.ico" />
+    <title>TDQ</title>
   </head>
   <body class="page">
     <div class="page__content">
       <header class="header">
         <nav class="nav">
-          <img
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="LOGO"
-            class="nav__logo"
-          />
+          <img src="./images/TDQ_logo.JPG" alt="LOGO" class="nav__logo" />
           <ul class="nav__links">
             <li>
               <a class="nav__link" href="#maps">Maps</a>
@@ -42,7 +38,7 @@
         <div class="submitBoard">
           <h1 class="submitBoard__title">Find a Road Trip with TDQ</h1>
           <h2 class="submitBoard__subtitle">
-            Having a long road trip with short and effect time
+            Plan an efficient road trip across the country with Trips Done Quick
           </h2>
           <form class="submitBoard__form">
             <fieldset class="form__fieldset">
@@ -52,7 +48,7 @@
                   type="text"
                   id="startng"
                   class="form__input"
-                  placeholder=" City Name"
+                  placeholder=" City, State"
                 />
               </label>
 
@@ -62,7 +58,7 @@
                   type="text"
                   id="going"
                   class="form__input"
-                  placeholder=" City Name"
+                  placeholder=" City, State"
                 />
               </label>
               <button type="submit" class="form__button">Search</button>
@@ -71,8 +67,113 @@
         </div>
       </header>
       <main class="content">
-        <section class="maps" id="maps">Map</section>
-        <section class="cities" id="cities">Cities</section>
+        <section class="maps" id="maps">
+          <div class="map">
+            <div class="map__content">
+              <h2 class="map__title">Efficient Map</h2>
+              <img
+                src="./images/random_route.png"
+                alt="Efficient Route"
+                class="map__route"
+              />
+            </div>
+            <div class="map__info">
+              <h2 class="map__title">Efficient Info:</h2>
+              <ul class="map__list">
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Total Miles:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Expected Time:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Total Destinations:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Fourth Thing???:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Fifth Thing???:
+                  </h3>
+                  <h4
+                    class="map__list-item map__list-item_value map__list-item_value_last"
+                  >
+                    XX
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="map">
+            <div class="map__content">
+              <h2 class="map__title">Standard Map</h2>
+              <img
+                src="./images/random_route.png"
+                alt="Standard Route"
+                class="map__route"
+              />
+            </div>
+            <div class="map__info">
+              <h2 class="map__title">Standard Info:</h2>
+              <ul class="map__list">
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Total Miles:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Expected Time:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Total Destinations:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Fourth Thing???:
+                  </h3>
+                  <h4 class="map__list-item map__list-item_value">XX</h4>
+                </li>
+                <li class="map__list-item">
+                  <h3 class="map__list-item map__list-item_title">
+                    Fifth Thing???:
+                  </h3>
+                  <h4
+                    class="map__list-item map__list-item_value map__list-item_value_last"
+                  >
+                    XX
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="map__comparison">
+            Taking the efficient route over the standard route will save you XX
+            miles and XX hours of driving.
+          </h3>
+        </section>
+        <section class="cities" id="cities">
+          <h2 class="cities__title">Fun Things To Do In Each City:</h2>
+        </section>
         <section class="about" id="about-us">About Us</section>
       </main>
       <footer class="footer">test footer</footer>
