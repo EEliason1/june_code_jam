@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("./fonts/InknutAntiqua-SemiBold.ttf") format("ttf");
+  src: url("./fonts/InknutAntiqua-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -35,5 +35,5 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/Inder-Regular.ttf") format("ttf");
+  src: url("./fonts/Inder-Regular.ttf") format("truetype");
 }

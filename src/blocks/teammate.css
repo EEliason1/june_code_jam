@@ -1,0 +1,21 @@
+.teammate {
+}
+.teammate__list {
+  list-style-type: none;
+}
+.teammate__board {
+  background-color: #fff;
+  width: 310px;
+  height: 180px;
+}
+.teammate__photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-style: 10px #fff solid;
+}
+.teammate__name {
+  font-size: 32px;
+  font-family: inder, Arial, sans-serif;
+  text-decoration: none;
+}

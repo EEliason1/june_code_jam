@@ -23,40 +23,41 @@
   margin: 25px;
   display: flex;
   justify-content: center;
-  font-family: Inknut-Antiqua;
+  font-family: InknutAntiqua, Arial, sans-serif;
 }
-.goodRoute__cityBoard {
+.goodRoute__cities-board {
   background-color: #fff;
   max-width: 470px;
   margin: 10px 75px;
   padding: 10px 65px;
   border-radius: 10px;
 }
-.goodRoute__cityBoard_text {
+.goodRoute__cities-board_text {
   font-size: 24px;
   margin-bottom: 0;
 }
-.goodRoute__cityBoard_cities {
+.goodRoute__cities-board_cities {
   font-size: 32px;
   line-height: 45px;
 }
-.goodRoute__cityBoard_city {
-  font-family: inder;
+.goodRoute__cities-board_city {
+  font-family: inder, Arial, sans-serif;
 }
-.goodRoute__estimateBoard {
+.goodRoute__estimate-board {
   background-color: #fff;
   width: 470px;
   margin: 10px 75px;
   padding: 25px 65px;
   border-radius: 10px;
 }
-.goodRoute__estimateBoard_text {
+.goodRoute__estimate-board_text {
   font-size: 32px;
   line-height: 40px;
   margin: 0;
+  font-family: inder, Arial, sans-serif;
 }
-.goodRoute__estimateBoard_textNumber {
-  font-size: 32px;
+.goodRoute__estimate-board_textNumber {
+  font-size: 40px;
   line-height: 40px;
   color: #ff0000;
 }

@@ -84,23 +84,25 @@
           <div class="goodRoute__content">
             <div class="goodRoute__board">
               <h2 class="goodRoute__title">Best Route</h2>
-              <div class="goodRoute__cityBoard">
-                <h3 class="goodRoute__cityBoard_text">Follow by the cities:</h3>
-                <ul class="goodRoute__cityBoard_cities">
-                  <li class="goodRoute__cityBoard_city">Dallas</li>
-                  <li class="goodRoute__cityBoard_city">Los Angeles</li>
-                  <li class="goodRoute__cityBoard_city">Seattle</li>
-                  <li class="goodRoute__cityBoard_city">Denver</li>
-                  <li class="goodRoute__cityBoard_city">Chicago</li>
-                  <li class="goodRoute__cityBoard_city">New York</li>
-                  <li class="goodRoute__cityBoard_city">Atlanta</li>
-                  <li class="goodRoute__cityBoard_city">Tampa</li>
+              <div class="goodRoute__cities-board">
+                <h3 class="goodRoute__cities-board_text">
+                  Follow by the cities:
+                </h3>
+                <ul class="goodRoute__cities-board_cities">
+                  <li class="goodRoute__cities-board_city">Dallas</li>
+                  <li class="goodRoute__cities-board_city">Los Angeles</li>
+                  <li class="goodRoute__cities-board_city">Seattle</li>
+                  <li class="goodRoute__cities-board_city">Denver</li>
+                  <li class="goodRoute__cities-board_city">Chicago</li>
+                  <li class="goodRoute__cities-board_city">New York</li>
+                  <li class="goodRoute__cities-board_city">Atlanta</li>
+                  <li class="goodRoute__cities-board_city">Tampa</li>
                 </ul>
               </div>
-              <div class="goodRoute__estimateBoard">
-                <h3 class="goodRoute__estimateBoard_text">
+              <div class="goodRoute__estimate-board">
+                <h3 class="goodRoute__estimate-board_text">
                   Estimate Distance:
-                  <span class="goodRoute__estimateBoard_textNumber"
+                  <span class="goodRoute__estimate-board_textNumber"
                     >10000.00</span
                   >
                   miles
@@ -115,11 +117,60 @@
           </div>
         </section>
         <section class="cities" id="cities">
-          <h2 class="cities__title">Fun Things To Do In Each City:</h2>
+          <h2 class="cities__title">City Pass</h2>
+          <div class="cities__decoration-line"></div>
+          <p class="cities__subtitle">Fast, Fun, Afforable</p>
+        <section class="cities__cards">
+          <ul class="citiesCard__list">
+            <li class="citiesCard">
+              <div class="citiesCard__board">
+                <img class="citiesCard__image" src="./images/cities_images/atlanta.jpg" alt="Atlanta"/>
+                <p class="citiesCard__name">Atlanta, GA</p>
+              </div>
+            </li> 
+          </ul>
         </section>
-        <section class="about" id="about-us">About Us</section>
+        <section class="about" id="about-us">
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
+          <div class="about__us">
+          <h2 class="about__us_title">About Us<h2>
+            <p class="about__description">We are a dedicated team committed to facilitating enjoyable and efficient travel experiences. Our ethos centers on the fusion of fun and effectiveness, recognizing the importance of both leisure and productivity. Understanding the challenges inherent in trip planning, we prioritize providing value within reasonable timeframes. With our assistance, navigating the complexities of travel becomes a seamless and enjoyable endeavor.</p>
+          </div>
+          <div class="about__team">
+            <h2 class="about__team_title">The Team</h2>
+        <div class="about__team_position">
+          <h3 class="about__team_position_name">Data Science</h3>
+          <h3 class="about__team_position_name">Software Engineer</h3>
+        </div>
+        <div class="teammate">
+          <ul class="teammate__list">
+            <li class="teammate__board">
+              <img class="teammate__photo" src="./images/linkedin_profile/Dan_Pocock.jpg" alt="Dan_Pocock">
+              <a href="https://www.linkedin.com/in/danpocock/" class="teammate__name">Dan Pocock</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        
+          </section>
       </main>
       <footer class="footer">test footer</footer>
     </div>
+    <template id="citiesCard-template">
+      <li class="citiesCard">
+      <div class="citiesCard__board">
+        <img class="citiesCard__image" src="" alt=""/>
+        <p class="citiesCard__name"></p>
+      </div>
+    </li>    
+    </template>
+    <template id="teammate-template">
+      <li class="teammate">
+        <img class="teammate__photo" src="" alt="">
+        <a href="" class="teammate__name"></a>
+      </li>
+    </template>
+    <script src="./pages/index.js"></script>
   </body>
 </html>
