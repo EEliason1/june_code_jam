@@ -51,132 +51,126 @@
                   placeholder=" City, State"
                 />
               </label>
-
-              <label class="form__label" for="going_to"
-                >GOING TO*
-                <input
-                  type="text"
-                  id="going"
-                  class="form__input"
-                  placeholder=" City, State"
-                />
-              </label>
               <button type="submit" class="form__button">Search</button>
             </fieldset>
           </form>
         </div>
       </header>
       <main class="content">
-        <section class="maps" id="maps">
-          <div class="map">
-            <div class="map__content">
-              <h2 class="map__title">Efficient Map</h2>
-              <img
-                src="./images/random_route.png"
-                alt="Efficient Route"
-                class="map__route"
-              />
-            </div>
-            <div class="map__info">
-              <h2 class="map__title">Efficient Info:</h2>
-              <ul class="map__list">
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Total Miles:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Expected Time:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Total Destinations:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Fourth Thing???:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Fifth Thing???:
-                  </h3>
-                  <h4
-                    class="map__list-item map__list-item_value map__list-item_value_last"
-                  >
-                    XX
-                  </h4>
-                </li>
-              </ul>
-            </div>
+        <section class="badRoute">
+          <img
+            class="badRoute__image"
+            src="./images/random_route.png"
+            alt="random_route"
+          />
+          <div class="badRoute__text">
+            <h2 class="badRoute__title">Traveling without planning?</h2>
+            <ul class="badRoute__lists">
+              <li class="badRoute__list">Waste of gas and time.</li>
+              <li class="badRoute__list">
+                Spending more time on driving than having fun.
+              </li>
+              <li class="badRoute__list">
+                Are you sure you can come back in time?
+              </li>
+            </ul>
+            <h2 class="badRoute__estimateTime">
+              Estimate distance for random route
+              <span class="badRoute__estimateTimeNumber">99999.99</span> miles.
+            </h2>
           </div>
-          <div class="map">
-            <div class="map__content">
-              <h2 class="map__title">Standard Map</h2>
-              <img
-                src="./images/random_route.png"
-                alt="Standard Route"
-                class="map__route"
-              />
-            </div>
-            <div class="map__info">
-              <h2 class="map__title">Standard Info:</h2>
-              <ul class="map__list">
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Total Miles:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Expected Time:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Total Destinations:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Fourth Thing???:
-                  </h3>
-                  <h4 class="map__list-item map__list-item_value">XX</h4>
-                </li>
-                <li class="map__list-item">
-                  <h3 class="map__list-item map__list-item_title">
-                    Fifth Thing???:
-                  </h3>
-                  <h4
-                    class="map__list-item map__list-item_value map__list-item_value_last"
+        </section>
+        <section class="goodRoute" id="maps">
+          <div class="goodRoute__content">
+            <div class="goodRoute__board">
+              <h2 class="goodRoute__title">Best Route</h2>
+              <div class="goodRoute__cities-board">
+                <h3 class="goodRoute__cities-board_text">
+                  Follow by the cities:
+                </h3>
+                <ul class="goodRoute__cities-board_cities">
+                  <li class="goodRoute__cities-board_city">Dallas</li>
+                  <li class="goodRoute__cities-board_city">Los Angeles</li>
+                  <li class="goodRoute__cities-board_city">Seattle</li>
+                  <li class="goodRoute__cities-board_city">Denver</li>
+                  <li class="goodRoute__cities-board_city">Chicago</li>
+                  <li class="goodRoute__cities-board_city">New York</li>
+                  <li class="goodRoute__cities-board_city">Atlanta</li>
+                  <li class="goodRoute__cities-board_city">Tampa</li>
+                </ul>
+              </div>
+              <div class="goodRoute__estimate-board">
+                <h3 class="goodRoute__estimate-board_text">
+                  Estimate Distance:
+                  <span class="goodRoute__estimate-board_textNumber"
+                    >10000.00</span
                   >
-                    XX
-                  </h4>
-                </li>
-              </ul>
+                  miles
+                </h3>
+              </div>
             </div>
+            <img
+              src="./images/random_route.png"
+              alt="best_route"
+              class="goodRoute__image"
+            />
           </div>
-          <h3 class="map__comparison">
-            Taking the efficient route over the standard route will save you XX
-            miles and XX hours of driving.
-          </h3>
         </section>
         <section class="cities" id="cities">
-          <h2 class="cities__title">Fun Things To Do In Each City:</h2>
+          <h2 class="cities__title">City Pass</h2>
+          <div class="cities__decoration-line"></div>
+          <p class="cities__subtitle">Fast, Fun, Afforable</p>
+        <section class="cities__cards">
+          <ul class="citiesCard__list">
+            <li class="citiesCard">
+              <div class="citiesCard__board">
+                <img class="citiesCard__image" src="./images/cities_images/atlanta.jpg" alt="Atlanta"/>
+                <p class="citiesCard__name">Atlanta, GA</p>
+              </div>
+            </li> 
+          </ul>
         </section>
-        <section class="about" id="about-us">About Us</section>
+        <section class="about" id="about-us">
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
+          <div class="about__us">
+          <h2 class="about__us_title">About Us<h2>
+            <p class="about__description">We are a dedicated team committed to facilitating enjoyable and efficient travel experiences. Our ethos centers on the fusion of fun and effectiveness, recognizing the importance of both leisure and productivity. Understanding the challenges inherent in trip planning, we prioritize providing value within reasonable timeframes. With our assistance, navigating the complexities of travel becomes a seamless and enjoyable endeavor.</p>
+          </div>
+          <div class="about__team">
+            <h2 class="about__team_title">The Team</h2>
+        <div class="about__team_position">
+          <h3 class="about__team_position_name">Data Science</h3>
+          <h3 class="about__team_position_name">Software Engineer</h3>
+        </div>
+        <div class="teammate">
+          <ul class="teammate__list">
+            <li class="teammate__board">
+              <img class="teammate__photo" src="./images/linkedin_profile/Dan_Pocock.jpg" alt="Dan_Pocock">
+              <a href="https://www.linkedin.com/in/danpocock/" class="teammate__name">Dan Pocock</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        
+          </section>
       </main>
       <footer class="footer">test footer</footer>
     </div>
+    <template id="citiesCard-template">
+      <li class="citiesCard">
+      <div class="citiesCard__board">
+        <img class="citiesCard__image" src="" alt=""/>
+        <p class="citiesCard__name"></p>
+      </div>
+    </li>    
+    </template>
+    <template id="teammate-template">
+      <li class="teammate">
+        <img class="teammate__photo" src="" alt="">
+        <a href="" class="teammate__name"></a>
+      </li>
+    </template>
+    <script src="./pages/index.js"></script>
   </body>
 </html>
