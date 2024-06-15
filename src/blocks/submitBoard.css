@@ -1,13 +1,13 @@
 .submitBoard {
   max-width: 400px;
-  height: 500px;
+  height: 400px;
   background-color: #ffe7c7;
   color: #ff9300;
   border-radius: 20px;
   padding: 60px 60px;
   position: absolute;
-  top: 220px;
-  right: 64px;
+  bottom: 120px;
+  right: 25px;
   z-index: 1;
   box-shadow: 10px 10px 5px gray;
 }

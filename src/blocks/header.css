@@ -1,15 +1,17 @@
 .header {
-  max-height: 800px;
+  max-height: 1480px;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 0 80px;
+  padding: 0px 80px 75px;
   position: relative;
   box-sizing: border-box;
   justify-content: center;
 }
 
 .header__image {
+  max-width: 1223px;
+  max-height: 710px;
   margin: 40px 0 0;
   top: 124px;
   width: 1230px;
