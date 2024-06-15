@@ -268,16 +268,16 @@ time_diff = time_diff.total_seconds()
 best_route
 
 # Calculate distance and time of optimal route
-distance_optimal, time_optimal = calculate_distance_time(best_route)
+distance_optimal_shortest, time_optimal_shortest = calculate_distance_time(best_route)
 
 # Show distance of optimal route
-# print(f"Optimal route distance: {distance_optimal} miles")
+# print(f"Optimal shortest route distance: {distance_optimal_shortest} miles")
 
 # Show time of optimal route
-# print(f"Optimal route time: {time_optimal} hours")
+# print(f"Optimal shortest route time: {time_optimal_shortest} hours")
 
 # Show map
-fig_optimal_shortest = map_route(best_route, 'Optimal Route',distance_optimal, time_optimal)
+fig_optimal_shortest = map_route(best_route, 'Optimal Route',distance_optimal_shortest, time_optimal_shortest)
 
 # Show the map
 # fig_optimal_shortest.show()
@@ -334,16 +334,16 @@ time_diff = time_diff.total_seconds()
 best_route = best_route[:-1]
 
 # Calculate distance and time of optimal route
-distance_optimal, time_optimal = calculate_distance_time(best_route)
+distance_optimal_circular, time_optimal_circular = calculate_distance_time(best_route)
 
 # Show distance of optimal route
-# print(f"Optimal route distance: {distance_optimal} miles")
+# print(f"Optimal circular route distance: {distance_optimal_circular} miles")
 
 # Show time of optimal route
-# print(f"Optimal route time: {time_optimal} hours")
+# print(f"Optimal circular route time: {time_optimal_circular} hours")
 
 # Show map
-fig_optimal_circular = map_route(best_route, 'Optimal Route',distance_optimal, time_optimal)
+fig_optimal_circular = map_route(best_route, 'Optimal Route',distance_optimal_circular, time_optimal_circular)
 
 # Show map
 # fig_optimal_circular.show()
