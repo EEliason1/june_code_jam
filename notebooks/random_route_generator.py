@@ -6,6 +6,7 @@ import random
 # import visualization packages
 import plotly.express as px
 import plotly.graph_objects as go
+import plotly.io as pio
 import polyline
 import googlemaps
 
@@ -17,7 +18,7 @@ from geopy.distance import geodesic
 try:
     df = pd.read_csv('cities.csv')
 except:
-    df = pd.read_csv('https://raw.githubusercontent.com/EEliason1/june_code_jam/main/notebooks/uscities.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/EEliason1/june_code_jam/main/notebooks/cities.csv')
 
 try:
     df_distances = pd.read_csv('distances.csv', index_col=0)
@@ -218,5 +219,3 @@ fig_random = map_route(random_route, 'Random Route',distance_random, time_random
 
 # Show the map
 # fig_random.show()
-
-# call the fig_random variable for the randomly generated map. code can be looped to generate a new route every x seconds in JS
