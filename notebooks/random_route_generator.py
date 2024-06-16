@@ -218,4 +218,4 @@ def map_route(city_list, title, total_distance, total_time):
 fig_random = map_route(random_route, 'Random Route',distance_random, time_random)
 
 # Show the map
-# fig_random.show()
+fig_random.show()

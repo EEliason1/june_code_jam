@@ -213,7 +213,7 @@ start_time = pd.Timestamp.now()
 
 # Target city
 if sys.argv[0] not in cities:
-    city = 'Tampa'
+    city = 'Dallas'
 else:
     city = sys.argv[0] 
 
@@ -281,9 +281,19 @@ distance_optimal_shortest, time_optimal_shortest = calculate_distance_time(best_
 fig_optimal_shortest = map_route(best_route, 'Optimal Route',distance_optimal_shortest, time_optimal_shortest)
 
 # Show the map
-# fig_optimal_shortest.show()
+fig_optimal_shortest.show()
 
-# For circular route. Reinitiate variables.
+# For circular route. Reinitiate variables. #############################################
+# Create timestamp to calculate how long it takes to find the optimal route
+start_time = pd.Timestamp.now()
+
+# Target city
+if sys.argv[0] not in cities:
+    city = 'Dallas'
+else:
+    city = sys.argv[0] 
+
+# Remaining cities
 remaining_cities = cities.copy()
 remaining_cities.remove(city)
 
@@ -331,20 +341,23 @@ time_diff = time_diff.total_seconds()
 # Print time difference
 # print(f"Time to find optimal route: {time_diff}")
 
-# Take off last city
+# Take off last city to compare to TSP package
 best_route = best_route[:-1]
+
+# Show best route
+best_route
 
 # Calculate distance and time of optimal route
 distance_optimal_circular, time_optimal_circular = calculate_distance_time(best_route)
 
 # Show distance of optimal route
-# print(f"Optimal circular route distance: {distance_optimal_circular} miles")
+# print(f"Optimal route distance: {distance_optimal} miles")
 
 # Show time of optimal route
-# print(f"Optimal circular route time: {time_optimal_circular} hours")
+# print(f"Optimal route time: {time_optimal} hours")
 
 # Show map
-fig_optimal_circular = map_route(best_route, 'Optimal Route',distance_optimal_circular, time_optimal_circular)
+fig_circular = map_route(best_route, 'Optimal Route',distance_optimal_circular, time_optimal_circular)
 
 # Show map
-# fig_optimal_circular.show()
+fig_circular.show()
