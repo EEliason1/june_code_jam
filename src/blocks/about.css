@@ -13,6 +13,9 @@
 
 .about {
   background-color: #cbf3f0;
+  position: relative;
+  z-index: 1;
+  padding: 40px;
 }
 .about__us {
 }
@@ -21,11 +24,17 @@
   font-size: 72px;
   font-family: InknutAntiqua, Arial, sans-serif;
   line-height: 75px;
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 .about__description {
   font-size: 20px;
   line-height: 24px;
+  width: 1200px;
+  display: flex;
+  margin: 40px auto;
+  text-align: center;
 }
 .about__team {
 }
@@ -34,25 +43,40 @@
   font-size: 72px;
   font-family: InknutAntiqua, Arial, sans-serif;
   line-height: 75px;
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 .about__team_position {
+  display: flex;
+  justify-content: space-around;
 }
+
+.about__team_group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
 .about__team_position_name {
   font-family: InknutAntiqua, Arial, sans-serif;
   color: #a25e00;
   font-size: 48px;
   line-height: 54px;
+
+  margin: auto;
 }
 .about__circle {
   width: 426px;
   height: 426px;
   border-radius: 50%;
   background-color: #ffe7c7;
-  top: -152px;
-
-  overflow: hidden;
+  display: flex;
+  position: absolute;
   z-index: -1;
+  top: -152px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .about__circle_animation_blurred {

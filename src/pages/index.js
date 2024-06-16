@@ -17,7 +17,7 @@ const linkedinProfileLink = [
   {
     name: "Yi Hui Lin",
     image: "../images/linkedin_profile/Yi_Hui_Lin.jpg",
-    link: "www.linkedin.com/in/yihuilinrosa",
+    link: "https://www.linkedin.com/in/yihuilinrosa",
   },
 ];
 
